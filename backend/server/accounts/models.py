@@ -21,6 +21,7 @@ class Profile(models.Model):
     birth_date = models.DateField(blank=True, null=True)
     profile_picture = models.ImageField(upload_to='profile_pictures/', blank=True, null=True)
     grade = models.CharField(max_length=10, blank=True, null=True)
+    telephone = models.CharField(max_length=30, blank=True, null=True)
 
     def __str__(self):
         return f"{self.user.username}'s Profile"

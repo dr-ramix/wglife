@@ -20,7 +20,7 @@ class ProfileSerializer(serializers.ModelSerializer):
         fields = [
             "user_id", "username", "email",
             "first_name", "last_name",
-            "gender", "birth_date", "profile_picture", "grade",
+            "gender", "birth_date", "profile_picture", "grade", "telephone"
         ]
 
     def update(self, instance, validated_data):
