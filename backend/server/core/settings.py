@@ -139,7 +139,7 @@ REST_FRAMEWORK = {
         'rest_framework_xml.renderers.XMLRenderer', 
     ),
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
     ),
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
@@ -165,6 +165,24 @@ REST_FRAMEWORK = {
 
 DJOSER = {
     'LOGIN_FIELD': 'username',
+    "PERMISSIONS": {
+        # allow unauthenticated signup & flows
+        "user_create": ["rest_framework.permissions.AllowAny"],
+        "user_activation": ["rest_framework.permissions.AllowAny"],
+        "password_reset": ["rest_framework.permissions.AllowAny"],
+        "password_reset_confirm": ["rest_framework.permissions.AllowAny"],
+        "set_password": ["rest_framework.permissions.IsAuthenticated"],
+
+        # reading/updating self requires auth
+        "user": ["rest_framework.permissions.IsAuthenticated"],
+        "user_delete": ["rest_framework.permissions.IsAuthenticated"],
+        "current_user": ["rest_framework.permissions.IsAuthenticated"],
+        
+    },
+    'SERIALIZERS': {
+        'user': 'core.serializers.UserSerializer',  # Path to your serializer
+        'current_user': 'core.serializers.UserSerializer',
+    },
 }
 
 #ToDo: Change the access token lifetime late
