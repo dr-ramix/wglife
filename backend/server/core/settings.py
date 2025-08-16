@@ -147,15 +147,26 @@ REST_FRAMEWORK = {
     'DEFAULT_THROTTLE_CLASSES': (
         'rest_framework.throttling.AnonRateThrottle',
         'rest_framework.throttling.UserRateThrottle',
+        'rest_framework.throttling.ScopedRateThrottle',
     ),
-    'DEFAULT_THROTTLE_RATES': {
-        'anon': '100/day',
-        'user': '1000/day',
+     "DEFAULT_THROTTLE_RATES": {
+        # scoped views can override via throttle_scope
+        "profile_read": "60/min",
+        "profile_write": "20/min",
+        "me": "30/min",
+        #global
+        "user": "200/min",
+        "anon": "30/min",
     },
     'DEFAULT_FILTER_BACKENDS': (
         'django_filters.rest_framework.DjangoFilterBackend',
         'rest_framework.filters.SearchFilter',
         'rest_framework.filters.OrderingFilter',
+    ),
+    "DEFAULT_PARSER_CLASSES": (
+        "rest_framework.parsers.JSONParser",
+        "rest_framework.parsers.FormParser",
+        "rest_framework.parsers.MultiPartParser",
     ),
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 20,
@@ -177,7 +188,6 @@ DJOSER = {
         "user": ["rest_framework.permissions.IsAuthenticated"],
         "user_delete": ["rest_framework.permissions.IsAuthenticated"],
         "current_user": ["rest_framework.permissions.IsAuthenticated"],
-        
     },
     'SERIALIZERS': {
         'user': 'core.serializers.UserSerializer',  # Path to your serializer
