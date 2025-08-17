@@ -23,12 +23,14 @@ from rest_framework_simplejwt.views import (
 )
 from accounts import urls as accounts_urls
 from society import urls as society_urls
+from voting import urls as voting_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('auth/', include('djoser.urls')),
     path('auth/', include('djoser.urls.jwt')),
     path('auth/jwt/blacklist/', TokenBlacklistView.as_view(), name='token_blacklist'),
-    path('accounts/', include(accounts_urls)),
-    path('society/', include(society_urls)),
+    path('accounts/', include(accounts_urls), name='accounts'),
+    path('society/', include(society_urls), name='society'),
+    path('voting/', include(voting_urls), name='voting'),
 ]
