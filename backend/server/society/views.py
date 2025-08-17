@@ -19,7 +19,6 @@ class StandardResultSetPagination(PageNumberPagination):
     page_size_query_param = "page_size"
     max_page_size = 100
 
-
 class ClanListCreateAPIView(APIView):
     """
     GET:   /society/clans/  -> List all clans
@@ -202,7 +201,7 @@ class MyClansDetailAPIView(APIView):
         membership.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
 
-class MembershipListCreateAPIView(APIView):
+class MembershipsListCreateAPIView(APIView):
     """
     GET: /society/memberships/  -> List all memberships
     POST: /society/memberships/  -> Create a new membership
@@ -268,7 +267,8 @@ class MembershipDetailAPIView(APIView):
         membership = get_object_or_404(Membership, pk=pk, user=request.user)
         membership.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
-class ClanRuleListCreateAPIView(APIView):
+    
+class ClanRulesListCreateAPIView(APIView):
     """
     GET: /society/clan-rules/  -> List all clan rules
     POST: /society/clan-rules/  -> Create a new clan rule
@@ -291,7 +291,6 @@ class ClanRuleListCreateAPIView(APIView):
             except IntegrityError:
                 return Response({"detail": "Clan rule creation failed due to integrity error."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
 class ClanRuleDetailAPIView(APIView):
     """
     GET: /society/clan-rules/<int:pk>/  -> Retrieve a clan rule by ID
