@@ -202,3 +202,135 @@ class MyClansDetailAPIView(APIView):
         membership.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
 
+class MembershipListCreateAPIView(APIView):
+    """
+    GET: /society/memberships/  -> List all memberships
+    POST: /society/memberships/  -> Create a new membership
+    """
+    permission_classes = [permissions.IsAuthenticated]
+    authentication_classes = [JWTAuthentication]
+
+    def get(self, request):
+        memberships = Membership.objects.filter(user=request.user)
+        serializer = MembershipSerializer(memberships, many=True)
+        return Response(serializer.data)
+
+    def post(self, request):
+        serializer = MembershipSerializer(data=request.data)
+        if serializer.is_valid():
+            try:
+                with transaction.atomic():
+                    serializer.save(user=request.user)
+                    return Response(serializer.data, status=status.HTTP_201_CREATED)
+            except IntegrityError:
+                return Response({"detail": "Membership creation failed due to integrity error."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+class MembershipDetailAPIView(APIView):
+    """
+    GET: /society/memberships/<int:pk>/  -> Retrieve a membership by ID
+    PUT: /society/memberships/<int:pk>/  -> Update a membership by ID
+    DELETE: /society/memberships/<int:pk>/  -> Delete a membership by ID
+    """
+    permission_classes = [permissions.IsAuthenticated]
+    authentication_classes = [JWTAuthentication]
+
+    def get(self, request, pk):
+        membership = get_object_or_404(Membership, pk=pk, user=request.user)
+        serializer = MembershipSerializer(membership)
+        return Response(serializer.data)
+
+    def put(self, request, pk):
+        membership = get_object_or_404(Membership, pk=pk, user=request.user)
+        serializer = MembershipSerializer(membership, data=request.data)
+        if serializer.is_valid():
+            try:
+                with transaction.atomic():
+                    serializer.save()
+                    return Response(serializer.data, status=status.HTTP_200_OK)
+            except IntegrityError:
+                return Response({"detail": "Membership update failed due to integrity error."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def patch(self, request, pk):
+        membership = get_object_or_404(Membership, pk=pk, user=request.user)
+        serializer = MembershipSerializer(membership, data=request.data, partial=True)
+        if serializer.is_valid():
+            try:
+                with transaction.atomic():
+                    serializer.save()
+                    return Response(serializer.data, status=status.HTTP_200_OK)
+            except IntegrityError:
+                return Response({"detail": "Membership update failed due to integrity error."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def delete(self, request, pk):
+        membership = get_object_or_404(Membership, pk=pk, user=request.user)
+        membership.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
+class ClanRuleListCreateAPIView(APIView):
+    """
+    GET: /society/clan-rules/  -> List all clan rules
+    POST: /society/clan-rules/  -> Create a new clan rule
+    """
+    permission_classes = [permissions.IsAuthenticated]
+    authentication_classes = [JWTAuthentication]
+
+    def get(self, request):
+        rules = ClanRule.objects.all()
+        serializer = ClanRuleSerializer(rules, many=True)
+        return Response(serializer.data)
+
+    def post(self, request):
+        serializer = ClanRuleSerializer(data=request.data)
+        if serializer.is_valid():
+            try:
+                with transaction.atomic():
+                    serializer.save(created_by=request.user)
+                    return Response(serializer.data, status=status.HTTP_201_CREATED)
+            except IntegrityError:
+                return Response({"detail": "Clan rule creation failed due to integrity error."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+class ClanRuleDetailAPIView(APIView):
+    """
+    GET: /society/clan-rules/<int:pk>/  -> Retrieve a clan rule by ID
+    PUT: /society/clan-rules/<int:pk>/  -> Update a clan rule by ID
+    DELETE: /society/clan-rules/<int:pk>/  -> Delete a clan rule by ID
+    """
+    permission_classes = [permissions.IsAuthenticated]
+    authentication_classes = [JWTAuthentication]
+
+    def get(self, request, pk):
+        rule = get_object_or_404(ClanRule, pk=pk)
+        serializer = ClanRuleSerializer(rule)
+        return Response(serializer.data)
+
+    def put(self, request, pk):
+        rule = get_object_or_404(ClanRule, pk=pk)
+        serializer = ClanRuleSerializer(rule, data=request.data)
+        if serializer.is_valid():
+            try:
+                with transaction.atomic():
+                    serializer.save()
+                    return Response(serializer.data, status=status.HTTP_200_OK)
+            except IntegrityError:
+                return Response({"detail": "Clan rule update failed due to integrity error."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def patch(self, request, pk):
+        rule = get_object_or_404(ClanRule, pk=pk)
+        serializer = ClanRuleSerializer(rule, data=request.data, partial=True)
+        if serializer.is_valid():
+            try:
+                with transaction.atomic():
+                    serializer.save()
+                    return Response(serializer.data, status=status.HTTP_200_OK)
+            except IntegrityError:
+                return Response({"detail": "Clan rule update failed due to integrity error."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def delete(self, request, pk):
+        rule = get_object_or_404(ClanRule, pk=pk)
+        rule.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
