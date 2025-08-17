@@ -22,6 +22,7 @@ from rest_framework_simplejwt.views import (
     TokenBlacklistView
 )
 from accounts import urls as accounts_urls
+from society import urls as society_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,4 +30,5 @@ urlpatterns = [
     path('auth/', include('djoser.urls.jwt')),
     path('auth/jwt/blacklist/', TokenBlacklistView.as_view(), name='token_blacklist'),
     path('accounts/', include(accounts_urls)),
+    path('society/', include(society_urls)),
 ]

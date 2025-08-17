@@ -1,9 +1,9 @@
 from rest_framework import serializers
-from .models import Society, Membership, SocietyRule
+from .models import Clan, Membership, ClanRule
 
-class SocietySerializer(serializers.ModelSerializer):
+class ClanSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Society
+        model = Clan
         fields = '__all__'
         read_only_fields = ['created_at', 'updated_at']
 
@@ -14,9 +14,9 @@ class MembershipSerializer(serializers.ModelSerializer):
         read_only_fields = ['joined_at']
 
 
-class SocietyRuleSerializer(serializers.ModelSerializer):
+class ClanRuleSerializer(serializers.ModelSerializer):
     class Meta:
-        model = SocietyRule
+        model = ClanRule
         fields = '__all__'
         read_only_fields = ['created_at', 'updated_at']
 

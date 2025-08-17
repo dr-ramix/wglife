@@ -1,4 +1,4 @@
-from django.db import transaction
+from django.db import transaction, IntegrityError
 from django.contrib.auth.models import User
 from rest_framework.views import APIView
 from rest_framework import authentication, permissions
@@ -38,7 +38,7 @@ class ProfileListCreateAPIView(APIView):
 
         gender = request.query_params.get("gender")
         grade = request.query_params.get("grade")
-        ordering = request.query_params.get("ordering")
+        order_by = request.query_params.get("order-by")
         search = request.query_params.get("search")
 
         # Filter profiles based on query parameters
@@ -55,8 +55,8 @@ class ProfileListCreateAPIView(APIView):
                 Q(user__last_name__icontains=search)
             )
         # Ordering
-        if ordering:
-            queryset = queryset.order_by(ordering)
+        if order_by:
+            queryset = queryset.order_by(order_by)
 
         paginator = StandardResultSetPagination()
         result_page = paginator.paginate_queryset(queryset, request)
@@ -67,9 +67,12 @@ class ProfileListCreateAPIView(APIView):
     def post(self, request):
         serializer = ProfileSerializer(data=request.data)
         if serializer.is_valid():
-            with transaction.atomic():
-                profile = serializer.save(user=request.user)
-            return Response(ProfileSerializer(profile).data, status=status.HTTP_201_CREATED)
+            try:
+                with transaction.atomic():
+                    profile = serializer.save(user=request.user)
+                return Response(ProfileSerializer(profile).data, status=status.HTTP_201_CREATED)
+            except IntegrityError:
+                return Response({"detail": "Profile creation failed due to integrity error."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class ProfileDetailAPIView(APIView):
@@ -91,18 +94,24 @@ class ProfileDetailAPIView(APIView):
         profile = get_object_or_404(Profile.objects.select_related('user'), pk=pk)
         serializer = ProfileSerializer(profile, data=request.data, partial=True)
         if serializer.is_valid():
-            with transaction.atomic():
-                updated_profile = serializer.save()
-            return Response(ProfileSerializer(updated_profile).data)
+            try:
+                with transaction.atomic():
+                    updated_profile = serializer.save()
+                return Response(ProfileSerializer(updated_profile).data)
+            except IntegrityError:
+                return Response({"detail": "Profile update failed due to integrity error."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def patch(self, request, pk):
         profile = get_object_or_404(Profile.objects.select_related('user'), pk=pk)
         serializer = ProfileSerializer(profile, data=request.data, partial=True)
         if serializer.is_valid():
-            with transaction.atomic():
-                updated_profile = serializer.save()
-            return Response(ProfileSerializer(updated_profile).data)
+            try:
+                with transaction.atomic():
+                    updated_profile = serializer.save()
+                return Response(ProfileSerializer(updated_profile).data)
+            except IntegrityError:
+                return Response({"detail": "Profile update failed due to integrity error."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def delete(self, request, pk):
@@ -131,9 +140,12 @@ class ProfileCurrentUserAPIView(APIView):
         profile = get_object_or_404(Profile.objects.select_related('user'), user=request.user)
         serializer = ProfileSerializer(profile, data=request.data, partial=True)
         if serializer.is_valid():
-            with transaction.atomic():
-                updated_profile = serializer.save()
-            return Response(ProfileSerializer(updated_profile).data)
+            try:
+                with transaction.atomic():
+                    updated_profile = serializer.save()
+                return Response(ProfileSerializer(updated_profile).data)
+            except IntegrityError:
+                return Response({"detail": "Profile update failed due to integrity error."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def patch(self, request):
@@ -144,7 +156,7 @@ class ProfileCurrentUserAPIView(APIView):
                 updated_profile = serializer.save()
             return Response(ProfileSerializer(updated_profile).data)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-    
+
     def delete(self, request):
         profile = get_object_or_404(Profile.objects.select_related('user'), user=request.user)
         user = get_object_or_404(User, pk=request.user.pk)
