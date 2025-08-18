@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.db import transaction, IntegrityError
 from django.db.models import Exists, OuterRef
 from rest_framework.views import APIView
@@ -37,10 +36,10 @@ class ClanListCreateAPIView(APIView):
     def get(self, request):
         queryset = Clan.objects.all()
 
-        country  = request.query_params.get("country")
-        city     = request.query_params.get("city")
+        country    = request.query_params.get("country")
+        city       = request.query_params.get("city")
         search     = request.query_params.get("search")
-        order_by = request.query_params.get("order-by")
+        order_by   = request.query_params.get("order-by")
 
         if country:
             queryset = queryset.filter(country=country)
@@ -62,8 +61,8 @@ class ClanListCreateAPIView(APIView):
         if serializers.is_valid():
            try:
                with transaction.atomic():
-                serializers.save()
-                return Response(serializers.data, status=status.HTTP_201_CREATED)
+                    serializers.save()
+                    return Response(serializers.data, status=status.HTTP_201_CREATED)
            except IntegrityError:
                return Response({"detail": "Clan creation failed due to integrity error."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         return Response(serializers.errors, status=status.HTTP_400_BAD_REQUEST)
@@ -267,7 +266,7 @@ class MembershipDetailAPIView(APIView):
         membership = get_object_or_404(Membership, pk=pk, user=request.user)
         membership.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
-    
+
 class ClanRulesListCreateAPIView(APIView):
     """
     GET: /society/clan-rules/  -> List all clan rules
