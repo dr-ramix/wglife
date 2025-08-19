@@ -80,3 +80,17 @@ class PollDetailAPIView(APIView):
         poll = get_object_or_404(Poll, id=id)
         poll.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+
+
+
+
+class PollVoteListCreate(APIView):
+    """
+
+    """
+    def get(self, request):
+        #####
+
+    def post(self, request):
+        request
