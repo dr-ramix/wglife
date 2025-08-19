@@ -75,7 +75,7 @@ class PollDetailAPIView(APIView):
             except IntegrityError:
                     return Response({"detail": "Poll update failed due to integrity error."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-    
+
     def delete(self, request, id):
         poll = get_object_or_404(Poll, id=id)
         poll.delete()

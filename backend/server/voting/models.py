@@ -25,6 +25,8 @@ class Poll(models.Model):
 class PollOption(models.Model):
     poll = models.ForeignKey(Poll, on_delete=models.CASCADE, related_name='options')
     text = models.CharField(max_length=255)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
     def __str__(self):
         return f"{self.poll.title} - {self.text}"
     class Meta:
@@ -36,6 +38,8 @@ class PollVote(models.Model):
     option = models.ForeignKey(PollOption, on_delete=models.CASCADE, related_name='votes')
     poll = models.ForeignKey(Poll, on_delete=models.CASCADE, related_name='votes')
     created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
     class Meta:
         unique_together = ('user', 'option', 'poll')
 

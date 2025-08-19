@@ -82,6 +82,7 @@ class ClanDetailAPIView(APIView):
         serializer = ClanSerializer(clan)
         return Response(serializer.data)
 
+    
     def put(self, request, id):
         clan = get_object_or_404(Clan, id=id)
         serializer = ClanSerializer(clan, data=request.data)
@@ -110,6 +111,7 @@ class ClanDetailAPIView(APIView):
         clan = get_object_or_404(Clan, id=id)
         clan.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+    
 
 class MyClansListCreateAPIView(APIView):
     """
