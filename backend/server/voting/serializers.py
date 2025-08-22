@@ -4,8 +4,7 @@ from django.db import transaction, IntegrityError
 from django.utils import timezone
 
 from .models import Poll, PollOption, PollVote
-from backend.server.voting.serializers import PollSerializer
-from backend.server.society.serializers import validate
+
 
 
 class PollOptionSerializer(serializers.ModelSerializer):
@@ -19,11 +18,11 @@ class PollOptionSerializer(serializers.ModelSerializer):
 
 
 class PollSerializer(serializers.ModelSerializer):
-    option = PollOptionSerializer(many=True)
+    options = PollOptionSerializer(many=True)
     created_by = serializers.PrimaryKeyRelatedField(queryset = User.objects.all(), required=False)
     class Meta:
         model = Poll
-        fiels =  (
+        fields =  (
             "id",
             "title",
             "description",
@@ -38,7 +37,7 @@ class PollSerializer(serializers.ModelSerializer):
         )
         read_only_fields = ("created_at", "updated_at")
 
-        def validate(self, attrs):
+    def validate(self, attrs):
             #For Partial Updates we take the new values or exiting value if not provided and check for validation
             start = attrs.get("start_date", getattr(self.instance, "start_date", None))
             end = attrs.get("end_date", getattr(self.instance, "end_date", None))
@@ -46,13 +45,13 @@ class PollSerializer(serializers.ModelSerializer):
                 raise serializers.ValidationError("Start date must be before end date.")
             return attrs
         #strip() -> Trimming a function in python for removing unwanted whitespaces
-        def validate_options(self, value): 
+    def validate_options(self, value): 
             text = [option.get("text", "").strip() for option in value]
             if "" in text: 
                 raise serializers.ValidationError("Option text cannot be empty")
             return value
 
-        def _set_created_by_default(self, validated_data):
+    def _set_created_by_default(self, validated_data):
             if 'created_by' not in validated_data:
                 req = self.context.get('request')
                 if req and getattr(req, 'user') and req.user.is_authenticated:
@@ -61,7 +60,7 @@ class PollSerializer(serializers.ModelSerializer):
                     raise serializers.ValidationError("Created by field is required.")
 
         #bulk_create() -> A method in Django ORM to create multiple objects at once
-        def create(self, validated_data):
+    def create(self, validated_data):
             options_data = validated_data.pop("options", [])
             self._set_created_by_default(validated_data)
             with transaction.atomic():
@@ -76,7 +75,7 @@ class PollSerializer(serializers.ModelSerializer):
         #instance -> An existing object that is being updated
         #validated_data -> The new data that is being used to update the object
         #setattr() -> A built-in Python function to set an attribute dynamically on an object
-        def update(self, instance, validated_data):
+    def update(self, instance, validated_data):
             options_data = validated_data.pop("options", None)
             for attr, value in validated_data.items():
                 setattr(instance, attr, value)
