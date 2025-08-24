@@ -36,7 +36,24 @@ class Work(models.Model):
     def __self__(self):
         return self.title + self.clan
 
-
+TASK_PRIORITY = {
+    1 : "low",
+    2 : "middle",
+    3 : "high",
+    4 : "very high"
+}
 
 class Task(models.Model):
+     title = models.CharField(max_length=255,
+                             null=False,
+                             blank=False,
+                             db_comment="Title of each Task",
+                             help_text="Please use less than 255 characters")
+     work = models.ForeignKey(Work, on_delete=models.CASCADE, null=False, blank=False)
+     priority = models.SmallIntegerField(choices=TASK_PRIORITY, max_length=1, min=1, max=4)
+
+
+     def __self__(self):
+         return self.title + self.work.title + self.work.clean
+     
 

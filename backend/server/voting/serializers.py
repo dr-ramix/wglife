@@ -10,7 +10,6 @@ from .models import Poll, PollOption, PollVote
 class PollOptionSerializer(serializers.ModelSerializer):
 
     id = serializers.IntegerField(required=False)
-
     class Meta:
         model = PollOption
         fields = ['id', 'poll', 'text', 'created_at', 'updated_at']
@@ -47,7 +46,7 @@ class PollSerializer(serializers.ModelSerializer):
         #strip() -> Trimming a function in python for removing unwanted whitespaces
     def validate_options(self, value): 
             text = [option.get("text", "").strip() for option in value]
-            if "" in text: 
+            if "" in text:
                 raise serializers.ValidationError("Option text cannot be empty")
             return value
 

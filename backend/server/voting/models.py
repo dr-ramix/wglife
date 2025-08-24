@@ -25,7 +25,7 @@ class Poll(models.Model):
 
     def is_valid(self) -> bool:
         return not ((self.status == "in") or (self.status == "de"))
-    
+
     @property
     def allow_multiple(self) -> bool:
         return self.max_choices > 1
