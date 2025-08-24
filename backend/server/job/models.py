@@ -32,3 +32,11 @@ class Work(models.Model):
     is_infinite = models.BooleanField(default=False)
     created_by = models.ForeignKey(User, on_delete=models.SET_NULL)
     clan = models.ForeignKey(Clan, on_delete=models.CASCADE)
+
+    def __self__(self):
+        return self.title + self.clan
+
+
+
+class Task(models.Model):
+
