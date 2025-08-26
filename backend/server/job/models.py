@@ -74,9 +74,3 @@ class Assignment(models.Model):
 
       def __self__(self):
            return self.task.title + self.start
-
-class DayOff(models.Model):
-     user = models.ForeignKey(User, on_delete=models.CASCADE ,null=False)
-     mode = models.CharField(max_length=255, null=False, blank=False )
-     date = models.DateField(null=False)
-
