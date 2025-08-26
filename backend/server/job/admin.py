@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import Work, Task, Assignment
 
-# Register your models here.
+models = [Work, Task, Assignment]
+for model in models:
+    admin.site.register(model)
