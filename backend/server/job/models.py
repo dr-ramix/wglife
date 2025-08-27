@@ -31,7 +31,7 @@ class Work(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     is_infinite = models.BooleanField(default=False)
-    created_by = models.ForeignKey(User, on_delete=models.SET_NULL)
+    created_by = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     clan = models.ForeignKey(Clan, on_delete=models.CASCADE)
     duration = models.IntegerField(null=False)
 
@@ -65,12 +65,12 @@ WORK_ASSIGNMENT_STATUS = {
      "n" : "Not Done",
 }
 class Assignment(models.Model):
-      assigned_user   = models.ForeignKey(User, on_delete=models.CASCADE, null=False, blank=False)
+      assigned_user   = models.ForeignKey(User, on_delete=models.CASCADE, null=False, related_name="assigned_assignments")
       task   = models.ForeignKey(Task, on_delete=models.CASCADE, null=False, blank=False)
       status = models.CharField(choices=WORK_ASSIGNMENT_STATUS, max_length=1, null=False, blank=False)
       start   = models.DateTimeField(null=False)
       end = models.DateTimeField(null=False)
-      finished_by = models.ForeignKey(User, on_delete=models.CASCADE)
+      finished_by = models.ForeignKey(User, on_delete=models.CASCADE, related_name="finished_assignments")
 
       def __self__(self):
            return self.task.title + self.start
