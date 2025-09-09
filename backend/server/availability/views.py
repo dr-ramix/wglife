@@ -3,9 +3,10 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from django.contrib.auth.models import User
-from django.template.context_processors import request
+from django.db import transaction
 from .models import DayOff
 from .serializers import DayOffSerializer
+
 
 class DayOffs(APIView):
 
@@ -38,8 +39,31 @@ class DayOffs(APIView):
         serializers = DayOffSerializer(dayoffs, many=True)
 
         return Response(serializers.date, status=status.HTTP_200_OK)
-    
-   
+
+    def post(self, request):
+        serializer = DayOffSerializer(data=datarequest)
+        try:
+            if serializer.is_valid(raise_exception=False):
+                with transaction.atomic():
+                    serializer.save()
+                return Response(serializer.data, status=status.HTTP_201_CREATED)
+            # Validation errors → 400
+            return Response(
+                {"errors": serializer.errors},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+        except DatabaseError as db_err:
+            # DB-level issue (e.g., constraint fail, deadlock, etc.)
+            return Response(
+                {"detail": f"Database error: {str(db_err)}"},
+                status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )
+        except Exception as exc:
+            # Catch-all for unexpected errors
+            return Response(
+                {"detail": f"Unexpected error: {str(exc)}"},
+                status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )
 
 
 

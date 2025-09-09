@@ -1,1 +1,0 @@
-This must be React JS app for web
