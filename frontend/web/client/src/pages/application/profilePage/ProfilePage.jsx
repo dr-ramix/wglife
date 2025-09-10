@@ -3,7 +3,7 @@ import React from 'react';
 const ProfilePage = () => {
     return (
         <div className='applicationProfilePage'>
-            fff
+            Profile
         </div>
     );
 }

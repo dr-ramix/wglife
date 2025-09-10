@@ -6,7 +6,7 @@ const AppLayoutPage = () => {
         <div className='applicationAppLayoutPage'>
             AppLayoutPage
             <main>
-                <Outlet /> 
+                <Outlet />
             </main>
         </div>
     );
