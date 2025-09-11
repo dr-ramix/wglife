@@ -1,10 +1,10 @@
 import React from 'react';
 import { Routes, Route, Link, Outlet } from 'react-router-dom';
 
-const AppLayoutPage = () => {
+const ApplicationLayoutPage = () => {
     return (
-        <div className='applicationAppLayoutPage'>
-            AppLayoutPage
+        <div className='applicationLayoutPage'>
+            ApplicationLayoutPage
             <main>
                 <Outlet />
             </main>
@@ -12,4 +12,4 @@ const AppLayoutPage = () => {
     );
 }
 
-export default AppLayoutPage;
+export default ApplicationLayoutPage;

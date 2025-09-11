@@ -8,7 +8,7 @@ import RegisterPage from './pages/landing/registerPage/RegisterPage'
 import DocsPage from './pages/landing/docsPage/DocsPage'
 import ContactPage from './pages/landing/contactPage/ContactPage'
 import NotFoundPage from './pages/landing/notFoundPage/NotFoundPage'
-import AppLayoutPage from './pages/application/appLayoutPage/AppLayoutPage'
+import AppLayoutPage from './pages/application/applicationLayoutPage/ApplicationLayoutPage'
 import MyProfilePage from './pages/application/myProfilePage/MyProfilePage'
 import DashboardPage from './pages/application/dashboardPage/DashboardPage'
 import ClanPage from './pages/application/clanPage/ClanPage'
@@ -18,7 +18,9 @@ import OffDaysPage from './pages/application/offdaysPage/OffdaysPage'
 import ConflictsPage from './pages/application/conflictsPage/ConflictsPage'
 import PollsPage from './pages/application/pollsPage/PollsPage'
 import ProfilePage from './pages/application/profilePage/ProfilePage'
-
+import LandingLayoutPage from './pages/landing/landingLayoutPage/LandingLayoutPage'
+import ApplicationLayoutPage from './pages/application/applicationLayoutPage/ApplicationLayoutPage'
+import PricingPage from './pages/landing/pricingPage/PricingPage'
 
 
 function App() {
@@ -26,12 +28,15 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/register" element={<RegisterPage />} />
-        <Route path="/docs" element={<DocsPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="/app/" element={<AppLayoutPage />}>
+        <Route path="/" element={<LandingLayoutPage />}>
+            <Route index element={<HomePage />} />
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/register" element={<RegisterPage />} />
+            <Route path="/docs" element={<DocsPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/pricing" element={<PricingPage />} />
+        </Route>
+        <Route path="/app" element={<ApplicationLayoutPage />}>
             <Route index element={<DashboardPage />} />
             <Route path="dashboard" element={<DashboardPage />} />
             <Route path="my-profile" element={<MyProfilePage />} />
