@@ -21,7 +21,7 @@ import ProfilePage from './pages/application/profilePage/ProfilePage'
 import LandingLayoutPage from './pages/landing/landingLayoutPage/LandingLayoutPage'
 import ApplicationLayoutPage from './pages/application/applicationLayoutPage/ApplicationLayoutPage'
 import PricingPage from './pages/landing/pricingPage/PricingPage'
-
+import TutorialPage from './pages/landing/tutorialPage/TutorialPage'
 
 function App() {
 
@@ -30,9 +30,8 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingLayoutPage />}>
             <Route index element={<HomePage />} />
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="/register" element={<RegisterPage />} />
             <Route path="/docs" element={<DocsPage />} />
+            <Route path="/tutorial" element={<TutorialPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/pricing" element={<PricingPage />} />
         </Route>
@@ -48,6 +47,8 @@ function App() {
             <Route path="off-days" element={<OffDaysPage />} />
             <Route path="conflicts" element={<ConflictsPage />} />
         </Route>
+         <Route path="/login" element={<LoginPage />} />
+         <Route path="/register" element={<RegisterPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </div>

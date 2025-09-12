@@ -11,11 +11,11 @@ const NavbarLanding = () => {
             <span>WGLife</span>
           </div>
           <div className='navbarLadingRight'>
-             <ButtonLightMain content="Tutorial" />
-             <ButtonLightMain content="Contact" />
-             <ButtonLightMain content="Pricing" />
-             <ButtonDarkMain content="Log in" />
-             <ButtonDarkMain content="Sign up" />
+             <ButtonLightMain to="/tutorial">Tutorial</ButtonLightMain>
+             <ButtonLightMain to="/pricing">Pricing</ButtonLightMain>
+             <ButtonLightMain to="/contact">Contact</ButtonLightMain>
+             <ButtonDarkMain to="/login">Log In</ButtonDarkMain>
+             <ButtonDarkMain to="/register">Sign In</ButtonDarkMain>
           </div>
           </div>
         </nav>
