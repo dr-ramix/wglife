@@ -4,6 +4,7 @@ const FooterLanding = () => {
     return (
         <div className='footerLanding'>
             FooterLanding
+            this is footer
         </div>
     );
 }

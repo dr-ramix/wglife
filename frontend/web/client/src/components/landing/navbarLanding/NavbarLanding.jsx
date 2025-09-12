@@ -2,9 +2,17 @@ import React from 'react';
 
 const NavbarLanding = () => {
     return (
-        <div className='navbarLanding'>
-        Navbar
-        </div>
+        <nav className='navbarLanding'>
+          <div className='navbarLandingContainer'>
+          <div className='navbarLandingLeft'>
+            <span>Lego</span>
+            <span>WGLife</span>
+          </div>
+          <div className='navbarLadingRight'>
+
+          </div>
+          </div>
+        </nav>
     );
 }
 
