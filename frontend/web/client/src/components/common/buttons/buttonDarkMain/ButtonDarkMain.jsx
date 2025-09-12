@@ -1,11 +1,8 @@
 import React from 'react';
 
-const ButtonDarkMain = (props) => {
+const ButtonDarkMain = ({to, children}) => {
     return (
-        <div className='buttonDarkMain'>
-           {props.content}
-        </div>
+        <Link to={to} className='buttonDarkMain'>{children}</Link>
     );
 }
-
 export default ButtonDarkMain;

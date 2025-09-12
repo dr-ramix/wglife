@@ -1,11 +1,8 @@
 import React from 'react';
 
-const ButtonLightMain = (props) => {
+const ButtonLightMain = ({to, children}) => {
     return (
-        <div className='buttonLightMain'>
-            {props.content}
-        </div>
+        <Link to={to} className='buttonLightMain'>{children}</Link>
     );
 }
-
 export default ButtonLightMain;
