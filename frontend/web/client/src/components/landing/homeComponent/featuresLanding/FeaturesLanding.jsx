@@ -1,13 +1,16 @@
 import React from 'react';
+import FeatureLanding from '../featureLanding/FeatureLanding';
 
 const FeaturesLanding = () => {
     return (
         <div className='featuresLanding'>
-            FeaturesLanding
-            <FeaturesLanding logo="LOGO" title="Tasks Scheduling" description="description" />
-            <FeaturesLanding logo="LOGO" title="Polls" description="description" />
-            <FeaturesLanding logo="LOGO" title="Conflicts" description="description" />
-            <FeaturesLanding logo="LOGO" title="Ranking" description="description" />
+            <h2>Features</h2>
+            <div className='featuresLandingWrapper'>
+                <FeatureLanding logo="LOGO" title="Tasks Scheduling" description="description" />
+                <FeatureLanding logo="LOGO" title="Polls" description="description" />
+                <FeatureLanding logo="LOGO" title="Conflicts" description="description" />
+                <FeatureLanding logo="LOGO" title="Ranking" description="description" />
+            </div>
         </div>
     );
 }
