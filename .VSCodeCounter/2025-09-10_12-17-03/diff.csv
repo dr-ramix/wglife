@@ -1,0 +1,103 @@
+"filename", "language", "Markdown", "XML", "JavaScript JSX", "JSON", "PostCSS", "HTML", "Python", "comment", "blank", "total"
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/accounts/__init__.py", "Python", 0, 0, 0, 0, 0, 0, 0, 0, -1, -1
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/accounts/admin.py", "Python", 0, 0, 0, 0, 0, 0, -3, -1, -2, -6
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/accounts/apps.py", "Python", 0, 0, 0, 0, 0, 0, -6, 0, -3, -9
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/accounts/filters.py", "Python", 0, 0, 0, 0, 0, 0, 0, 0, -1, -1
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/accounts/migrations/0001_initial.py", "Python", 0, 0, 0, 0, 0, 0, -20, -1, -7, -28
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/accounts/migrations/0002_profile_delete_userprofile.py", "Python", 0, 0, 0, 0, 0, 0, -24, -1, -6, -31
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/accounts/migrations/0003_remove_profile_id_alter_profile_user.py", "Python", 0, 0, 0, 0, 0, 0, -19, -1, -6, -26
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/accounts/migrations/0004_profile_telephone.py", "Python", 0, 0, 0, 0, 0, 0, -12, -1, -6, -19
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/accounts/migrations/__init__.py", "Python", 0, 0, 0, 0, 0, 0, 0, 0, -1, -1
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/accounts/models.py", "Python", 0, 0, 0, 0, 0, 0, -21, -4, -2, -27
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/accounts/pagination.py", "Python", 0, 0, 0, 0, 0, 0, 0, 0, -1, -1
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/accounts/permissions.py", "Python", 0, 0, 0, 0, 0, 0, -6, -4, -3, -13
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/accounts/serializers.py", "Python", 0, 0, 0, 0, 0, 0, -35, -6, -9, -50
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/accounts/signals.py", "Python", 0, 0, 0, 0, 0, 0, -8, -3, -1, -12
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/accounts/tests.py", "Python", 0, 0, 0, 0, 0, 0, -1, -1, -2, -4
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/accounts/urls.py", "Python", 0, 0, 0, 0, 0, 0, -7, 0, -4, -11
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/accounts/views.py", "Python", 0, 0, 0, 0, 0, 0, -121, -23, -21, -165
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/availability/__init__.py", "Python", 0, 0, 0, 0, 0, 0, 0, 0, -1, -1
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/availability/admin.py", "Python", 0, 0, 0, 0, 0, 0, -3, 0, -2, -5
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/availability/apps.py", "Python", 0, 0, 0, 0, 0, 0, -4, 0, -3, -7
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/availability/migrations/0001_initial.py", "Python", 0, 0, 0, 0, 0, 0, -19, -1, -7, -27
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/availability/migrations/__init__.py", "Python", 0, 0, 0, 0, 0, 0, 0, 0, -1, -1
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/availability/models.py", "Python", 0, 0, 0, 0, 0, 0, -11, 0, -5, -16
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/availability/serializers.py", "Python", 0, 0, 0, 0, 0, 0, -5, 0, -2, -7
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/availability/tests.py", "Python", 0, 0, 0, 0, 0, 0, -1, -1, -2, -4
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/availability/urls.py", "Python", 0, 0, 0, 0, 0, 0, -3, -1, -1, -5
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/availability/views.py", "Python", 0, 0, 0, 0, 0, 0, -55, -3, -13, -71
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/core/__init__.py", "Python", 0, 0, 0, 0, 0, 0, 0, 0, -1, -1
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/core/asgi.py", "Python", 0, 0, 0, 0, 0, 0, -4, -8, -5, -17
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/core/serializers.py", "Python", 0, 0, 0, 0, 0, 0, -23, -2, -5, -30
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/core/settings.py", "Python", 0, 0, 0, 0, 0, 0, -135, -30, -37, -202
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/core/urls.py", "Python", 0, 0, 0, 0, 0, 0, -19, -16, -1, -36
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/core/wsgi.py", "Python", 0, 0, 0, 0, 0, 0, -4, -8, -5, -17
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/job/__init__.py", "Python", 0, 0, 0, 0, 0, 0, 0, 0, -1, -1
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/job/admin.py", "Python", 0, 0, 0, 0, 0, 0, -5, 0, -1, -6
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/job/apps.py", "Python", 0, 0, 0, 0, 0, 0, -4, 0, -3, -7
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/job/migrations/0001_initial.py", "Python", 0, 0, 0, 0, 0, 0, -54, -1, -7, -62
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/job/migrations/__init__.py", "Python", 0, 0, 0, 0, 0, 0, 0, 0, -1, -1
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/job/models.py", "Python", 0, 0, 0, 0, 0, 0, -65, 0, -12, -77
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/job/serializers.py", "Python", 0, 0, 0, 0, 0, 0, 0, 0, -1, -1
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/job/tests.py", "Python", 0, 0, 0, 0, 0, 0, -1, -1, -2, -4
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/job/views.py", "Python", 0, 0, 0, 0, 0, 0, -1, -1, -2, -4
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/manage.py", "Python", 0, 0, 0, 0, 0, 0, -15, -3, -5, -23
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/society/__init__.py", "Python", 0, 0, 0, 0, 0, 0, 0, 0, -1, -1
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/society/admin.py", "Python", 0, 0, 0, 0, 0, 0, -5, 0, -2, -7
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/society/apps.py", "Python", 0, 0, 0, 0, 0, 0, -4, 0, -3, -7
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/society/migrations/0001_initial.py", "Python", 0, 0, 0, 0, 0, 0, -55, -1, -7, -63
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/society/migrations/__init__.py", "Python", 0, 0, 0, 0, 0, 0, 0, 0, -1, -1
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/society/models.py", "Python", 0, 0, 0, 0, 0, 0, -35, -1, -6, -42
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/society/serializers.py", "Python", 0, 0, 0, 0, 0, 0, -21, 0, -5, -26
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/society/tests.py", "Python", 0, 0, 0, 0, 0, 0, -1, -1, -2, -4
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/society/urls.py", "Python", 0, 0, 0, 0, 0, 0, -15, 0, -2, -17
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/society/views.py", "Python", 0, 0, 0, 0, 0, 0, -250, -43, -43, -336
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/voting/__init__.py", "Python", 0, 0, 0, 0, 0, 0, 0, 0, -1, -1
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/voting/admin.py", "Python", 0, 0, 0, 0, 0, 0, -5, -1, -2, -8
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/voting/apps.py", "Python", 0, 0, 0, 0, 0, 0, -4, 0, -3, -7
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/voting/migrations/0001_initial.py", "Python", 0, 0, 0, 0, 0, 0, -57, -1, -7, -65
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/voting/migrations/0002_remove_poll_is_active_poll_status.py", "Python", 0, 0, 0, 0, 0, 0, -16, -1, -6, -23
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/voting/migrations/0003_alter_pollvote_user.py", "Python", 0, 0, 0, 0, 0, 0, -15, -1, -6, -22
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/voting/migrations/0004_alter_poll_options_alter_polloption_options_and_more.py", "Python", 0, 0, 0, 0, 0, 0, -30, -1, -6, -37
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/voting/migrations/__init__.py", "Python", 0, 0, 0, 0, 0, 0, 0, 0, -1, -1
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/voting/models.py", "Python", 0, 0, 0, 0, 0, 0, -52, -1, -10, -63
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/voting/serializers.py", "Python", 0, 0, 0, 0, 0, 0, -131, -10, -27, -168
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/voting/tests.py", "Python", 0, 0, 0, 0, 0, 0, -1, -1, -2, -4
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/voting/urls.py", "Python", 0, 0, 0, 0, 0, 0, -7, 0, 0, -7
+"/Users/ramtinhosseini/Desktop/projects/wglife/backend/server/voting/views.py", "Python", 0, 0, 0, 0, 0, 0, -68, -16, -15, -99
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/mobile/README.md", "Markdown", 2, 0, 0, 0, 0, 0, 0, 0, 0, 2
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/README.md", "Markdown", 7, 0, 0, 0, 0, 0, 0, 0, 6, 13
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/eslint.config.js", "JavaScript JSX", 0, 0, 28, 0, 0, 0, 0, 0, 2, 30
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/index.html", "HTML", 0, 0, 0, 0, 0, 13, 0, 0, 1, 14
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/package-lock.json", "JSON", 0, 0, 0, 2500, 0, 0, 0, 0, 1, 2501
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/package.json", "JSON", 0, 0, 0, 28, 0, 0, 0, 0, 1, 29
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/public/vite.svg", "XML", 0, 1, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/App.css", "PostCSS", 0, 0, 0, 0, 6, 0, 0, 0, 2, 8
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/App.jsx", "JavaScript JSX", 0, 0, 13, 0, 0, 0, 0, 0, 4, 17
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/assets/react.svg", "XML", 0, 1, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/index.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/main.jsx", "JavaScript JSX", 0, 0, 12, 0, 0, 0, 0, 0, 2, 14
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/appLayoutPage/AppLayoutPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 0, 3, 11
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/clanPage/ClanPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/conflictsPage/ConflictsPage.jsx", "JavaScript JSX", 0, 0, 9, 0, 0, 0, 0, 0, 5, 14
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/dashboardPage/DashboardPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/discussionPage/DiscussionPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/discussionsPage/DiscussionsPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/jobDetailsPage/JobDetailsPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/jobsPage/JobsPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/membersPage/MembersPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/offDaysPage/OffdaysPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 0, 3, 11
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/pollPage/PollPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/pollsPage/PollsPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/profilePage/ProfilePage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/settingPage/SettingPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/welcomePage/WelcomePage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/landing/contactPage/ContactPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/landing/docsPage/DocsPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/landing/homePage/HomePage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/landing/loginPage/LoginPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/landing/pricingPage/PricingPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/landing/resgisterPage/RegisterPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/landing/tutorialPage/TutorialPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/vite.config.js", "JavaScript JSX", 0, 0, 5, 0, 0, 0, 0, 1, 2, 8
+"Total", "-", 9, 2, 235, 2528, 6, 13, -1486, -200, -251, 856

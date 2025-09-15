@@ -1,0 +1,97 @@
+Date : 2025-09-10 12:17:03
+Directory : /Users/ramtinhosseini/Desktop/projects/wglife/frontend
+Total : 35 files,  2793 codes, 1 comments, 109 blanks, all 2903 lines
+
+Languages
++----------------+------------+------------+------------+------------+------------+
+| language       | files      | code       | comment    | blank      | total      |
++----------------+------------+------------+------------+------------+------------+
+| JSON           |          2 |      2,528 |          0 |          2 |      2,530 |
+| JavaScript JSX |         26 |        235 |          1 |         97 |        333 |
+| HTML           |          1 |         13 |          0 |          1 |         14 |
+| Markdown       |          2 |          9 |          0 |          6 |         15 |
+| PostCSS        |          2 |          6 |          0 |          3 |          9 |
+| XML            |          2 |          2 |          0 |          0 |          2 |
++----------------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                        | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                           |         35 |      2,793 |          1 |        109 |      2,903 |
+| mobile                                                                                                                      |          1 |          2 |          0 |          0 |          2 |
+| web                                                                                                                         |         34 |      2,791 |          1 |        109 |      2,901 |
+| web/client                                                                                                                  |         34 |      2,791 |          1 |        109 |      2,901 |
+| web/client (Files)                                                                                                          |          6 |      2,581 |          1 |         13 |      2,595 |
+| web/client/public                                                                                                           |          1 |          1 |          0 |          0 |          1 |
+| web/client/src                                                                                                              |         27 |        209 |          0 |         96 |        305 |
+| web/client/src (Files)                                                                                                      |          4 |         31 |          0 |          9 |         40 |
+| web/client/src/assets                                                                                                       |          1 |          1 |          0 |          0 |          1 |
+| web/client/src/pages                                                                                                        |         22 |        177 |          0 |         87 |        264 |
+| web/client/src/pages/application                                                                                            |         15 |        121 |          0 |         59 |        180 |
+| web/client/src/pages/application/appLayoutPage                                                                              |          1 |          8 |          0 |          3 |         11 |
+| web/client/src/pages/application/clanPage                                                                                   |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/application/conflictsPage                                                                              |          1 |          9 |          0 |          5 |         14 |
+| web/client/src/pages/application/dashboardPage                                                                              |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/application/discussionPage                                                                             |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/application/discussionsPage                                                                            |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/application/jobDetailsPage                                                                             |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/application/jobsPage                                                                                   |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/application/membersPage                                                                                |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/application/offDaysPage                                                                                |          1 |          8 |          0 |          3 |         11 |
+| web/client/src/pages/application/pollPage                                                                                   |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/application/pollsPage                                                                                  |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/application/profilePage                                                                                |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/application/settingPage                                                                                |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/application/welcomePage                                                                                |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/landing                                                                                                |          7 |         56 |          0 |         28 |         84 |
+| web/client/src/pages/landing/contactPage                                                                                    |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/landing/docsPage                                                                                       |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/landing/homePage                                                                                       |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/landing/loginPage                                                                                      |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/landing/pricingPage                                                                                    |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/landing/resgisterPage                                                                                  |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/landing/tutorialPage                                                                                   |          1 |          8 |          0 |          4 |         12 |
++-----------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| filename                                                                                                                    | language       | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/mobile/README.md                                                     | Markdown       |          2 |          0 |          0 |          2 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/README.md                                                 | Markdown       |          7 |          0 |          6 |         13 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/eslint.config.js                                          | JavaScript JSX |         28 |          0 |          2 |         30 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/index.html                                                | HTML           |         13 |          0 |          1 |         14 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/package-lock.json                                         | JSON           |      2,500 |          0 |          1 |      2,501 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/package.json                                              | JSON           |         28 |          0 |          1 |         29 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/public/vite.svg                                           | XML            |          1 |          0 |          0 |          1 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/App.css                                               | PostCSS        |          6 |          0 |          2 |          8 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/App.jsx                                               | JavaScript JSX |         13 |          0 |          4 |         17 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/assets/react.svg                                      | XML            |          1 |          0 |          0 |          1 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/index.css                                             | PostCSS        |          0 |          0 |          1 |          1 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/main.jsx                                              | JavaScript JSX |         12 |          0 |          2 |         14 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/appLayoutPage/AppLayoutPage.jsx     | JavaScript JSX |          8 |          0 |          3 |         11 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/clanPage/ClanPage.jsx               | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/conflictsPage/ConflictsPage.jsx     | JavaScript JSX |          9 |          0 |          5 |         14 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/dashboardPage/DashboardPage.jsx     | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/discussionPage/DiscussionPage.jsx   | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/discussionsPage/DiscussionsPage.jsx | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/jobDetailsPage/JobDetailsPage.jsx   | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/jobsPage/JobsPage.jsx               | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/membersPage/MembersPage.jsx         | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/offDaysPage/OffdaysPage.jsx         | JavaScript JSX |          8 |          0 |          3 |         11 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/pollPage/PollPage.jsx               | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/pollsPage/PollsPage.jsx             | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/profilePage/ProfilePage.jsx         | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/settingPage/SettingPage.jsx         | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/welcomePage/WelcomePage.jsx         | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/landing/contactPage/ContactPage.jsx             | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/landing/docsPage/DocsPage.jsx                   | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/landing/homePage/HomePage.jsx                   | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/landing/loginPage/LoginPage.jsx                 | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/landing/pricingPage/PricingPage.jsx             | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/landing/resgisterPage/RegisterPage.jsx          | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/landing/tutorialPage/TutorialPage.jsx           | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/vite.config.js                                            | JavaScript JSX |          5 |          1 |          2 |          8 |
+| Total                                                                                                                       |                |      2,793 |          1 |        109 |      2,903 |
++-----------------------------------------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+

@@ -1,9 +1,11 @@
 import React from 'react';
 
-const FeatureLanding = () => {
+const FeatureLanding = ({logo, title, description}) => {
     return (
         <div className='featureLanding'>
-            FeatureLanding
+          <span>{logo}</span>
+          <span>{title}</span>
+          <p>{description}</p>
         </div>
     );
 }

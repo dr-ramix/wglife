@@ -4,10 +4,10 @@ const FeaturesLanding = () => {
     return (
         <div className='featuresLanding'>
             FeaturesLanding
-            <FeaturesLanding />
-            <FeaturesLanding />
-            <FeaturesLanding />
-            <FeaturesLanding />
+            <FeaturesLanding logo="LOGO" title="Tasks Scheduling" description="description" />
+            <FeaturesLanding logo="LOGO" title="Polls" description="description" />
+            <FeaturesLanding logo="LOGO" title="Conflicts" description="description" />
+            <FeaturesLanding logo="LOGO" title="Ranking" description="description" />
         </div>
     );
 }

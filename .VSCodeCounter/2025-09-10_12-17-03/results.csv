@@ -1,0 +1,37 @@
+"filename", "language", "Markdown", "XML", "JavaScript JSX", "JSON", "PostCSS", "HTML", "comment", "blank", "total"
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/mobile/README.md", "Markdown", 2, 0, 0, 0, 0, 0, 0, 0, 2
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/README.md", "Markdown", 7, 0, 0, 0, 0, 0, 0, 6, 13
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/eslint.config.js", "JavaScript JSX", 0, 0, 28, 0, 0, 0, 0, 2, 30
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/index.html", "HTML", 0, 0, 0, 0, 0, 13, 0, 1, 14
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/package-lock.json", "JSON", 0, 0, 0, 2500, 0, 0, 0, 1, 2501
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/package.json", "JSON", 0, 0, 0, 28, 0, 0, 0, 1, 29
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/public/vite.svg", "XML", 0, 1, 0, 0, 0, 0, 0, 0, 1
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/App.css", "PostCSS", 0, 0, 0, 0, 6, 0, 0, 2, 8
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/App.jsx", "JavaScript JSX", 0, 0, 13, 0, 0, 0, 0, 4, 17
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/assets/react.svg", "XML", 0, 1, 0, 0, 0, 0, 0, 0, 1
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/index.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 1, 1
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/main.jsx", "JavaScript JSX", 0, 0, 12, 0, 0, 0, 0, 2, 14
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/appLayoutPage/AppLayoutPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 3, 11
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/clanPage/ClanPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/conflictsPage/ConflictsPage.jsx", "JavaScript JSX", 0, 0, 9, 0, 0, 0, 0, 5, 14
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/dashboardPage/DashboardPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/discussionPage/DiscussionPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/discussionsPage/DiscussionsPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/jobDetailsPage/JobDetailsPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/jobsPage/JobsPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/membersPage/MembersPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/offDaysPage/OffdaysPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 3, 11
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/pollPage/PollPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/pollsPage/PollsPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/profilePage/ProfilePage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/settingPage/SettingPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/welcomePage/WelcomePage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/landing/contactPage/ContactPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/landing/docsPage/DocsPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/landing/homePage/HomePage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/landing/loginPage/LoginPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/landing/pricingPage/PricingPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/landing/resgisterPage/RegisterPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/landing/tutorialPage/TutorialPage.jsx", "JavaScript JSX", 0, 0, 8, 0, 0, 0, 0, 4, 12
+"/Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/vite.config.js", "JavaScript JSX", 0, 0, 5, 0, 0, 0, 1, 2, 8
+"Total", "-", 9, 2, 235, 2528, 6, 13, 1, 109, 2903

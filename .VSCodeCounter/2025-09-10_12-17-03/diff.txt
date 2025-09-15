@@ -1,0 +1,184 @@
+Date : 2025-09-10 12:17:03
+Directory : /Users/ramtinhosseini/Desktop/projects/wglife/frontend
+Total : 101 files,  1307 codes, -200 comments, -251 blanks, all 856 lines
+
+Languages
++----------------+------------+------------+------------+------------+------------+
+| language       | files      | code       | comment    | blank      | total      |
++----------------+------------+------------+------------+------------+------------+
+| JSON           |          2 |      2,528 |          0 |          2 |      2,530 |
+| JavaScript JSX |         26 |        235 |          1 |         97 |        333 |
+| HTML           |          1 |         13 |          0 |          1 |         14 |
+| Markdown       |          2 |          9 |          0 |          6 |         15 |
+| PostCSS        |          2 |          6 |          0 |          3 |          9 |
+| XML            |          2 |          2 |          0 |          0 |          2 |
+| Python         |         66 |     -1,486 |       -201 |       -360 |     -2,047 |
++----------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                                        | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                                           |        101 |      1,307 |       -200 |       -251 |        856 |
+| ..                                                                                                                                          |         66 |     -1,486 |       -201 |       -360 |     -2,047 |
+| ../backend                                                                                                                                  |         66 |     -1,486 |       -201 |       -360 |     -2,047 |
+| ../backend/server                                                                                                                           |         66 |     -1,486 |       -201 |       -360 |     -2,047 |
+| ../backend/server (Files)                                                                                                                   |          1 |        -15 |         -3 |         -5 |        -23 |
+| ../backend/server/accounts                                                                                                                  |         17 |       -283 |        -46 |        -76 |       -405 |
+| ../backend/server/accounts (Files)                                                                                                          |         12 |       -208 |        -42 |        -50 |       -300 |
+| ../backend/server/accounts/migrations                                                                                                       |          5 |        -75 |         -4 |        -26 |       -105 |
+| ../backend/server/availability                                                                                                              |         10 |       -101 |         -6 |        -37 |       -144 |
+| ../backend/server/availability (Files)                                                                                                      |          8 |        -82 |         -5 |        -29 |       -116 |
+| ../backend/server/availability/migrations                                                                                                   |          2 |        -19 |         -1 |         -8 |        -28 |
+| ../backend/server/core                                                                                                                      |          6 |       -185 |        -64 |        -54 |       -303 |
+| ../backend/server/job                                                                                                                       |          9 |       -130 |         -3 |        -30 |       -163 |
+| ../backend/server/job (Files)                                                                                                               |          7 |        -76 |         -2 |        -22 |       -100 |
+| ../backend/server/job/migrations                                                                                                            |          2 |        -54 |         -1 |         -8 |        -63 |
+| ../backend/server/society                                                                                                                   |         10 |       -386 |        -46 |        -72 |       -504 |
+| ../backend/server/society (Files)                                                                                                           |          8 |       -331 |        -45 |        -64 |       -440 |
+| ../backend/server/society/migrations                                                                                                        |          2 |        -55 |         -1 |         -8 |        -64 |
+| ../backend/server/voting                                                                                                                    |         13 |       -386 |        -33 |        -86 |       -505 |
+| ../backend/server/voting (Files)                                                                                                            |          8 |       -268 |        -29 |        -60 |       -357 |
+| ../backend/server/voting/migrations                                                                                                         |          5 |       -118 |         -4 |        -26 |       -148 |
+| mobile                                                                                                                                      |          1 |          2 |          0 |          0 |          2 |
+| web                                                                                                                                         |         34 |      2,791 |          1 |        109 |      2,901 |
+| web/client                                                                                                                                  |         34 |      2,791 |          1 |        109 |      2,901 |
+| web/client (Files)                                                                                                                          |          6 |      2,581 |          1 |         13 |      2,595 |
+| web/client/public                                                                                                                           |          1 |          1 |          0 |          0 |          1 |
+| web/client/src                                                                                                                              |         27 |        209 |          0 |         96 |        305 |
+| web/client/src (Files)                                                                                                                      |          4 |         31 |          0 |          9 |         40 |
+| web/client/src/assets                                                                                                                       |          1 |          1 |          0 |          0 |          1 |
+| web/client/src/pages                                                                                                                        |         22 |        177 |          0 |         87 |        264 |
+| web/client/src/pages/application                                                                                                            |         15 |        121 |          0 |         59 |        180 |
+| web/client/src/pages/application/appLayoutPage                                                                                              |          1 |          8 |          0 |          3 |         11 |
+| web/client/src/pages/application/clanPage                                                                                                   |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/application/conflictsPage                                                                                              |          1 |          9 |          0 |          5 |         14 |
+| web/client/src/pages/application/dashboardPage                                                                                              |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/application/discussionPage                                                                                             |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/application/discussionsPage                                                                                            |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/application/jobDetailsPage                                                                                             |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/application/jobsPage                                                                                                   |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/application/membersPage                                                                                                |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/application/offDaysPage                                                                                                |          1 |          8 |          0 |          3 |         11 |
+| web/client/src/pages/application/pollPage                                                                                                   |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/application/pollsPage                                                                                                  |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/application/profilePage                                                                                                |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/application/settingPage                                                                                                |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/application/welcomePage                                                                                                |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/landing                                                                                                                |          7 |         56 |          0 |         28 |         84 |
+| web/client/src/pages/landing/contactPage                                                                                                    |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/landing/docsPage                                                                                                       |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/landing/homePage                                                                                                       |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/landing/loginPage                                                                                                      |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/landing/pricingPage                                                                                                    |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/landing/resgisterPage                                                                                                  |          1 |          8 |          0 |          4 |         12 |
+| web/client/src/pages/landing/tutorialPage                                                                                                   |          1 |          8 |          0 |          4 |         12 |
++---------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| filename                                                                                                                                    | language       | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/accounts/__init__.py                                                           | Python         |          0 |          0 |         -1 |         -1 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/accounts/admin.py                                                              | Python         |         -3 |         -1 |         -2 |         -6 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/accounts/apps.py                                                               | Python         |         -6 |          0 |         -3 |         -9 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/accounts/filters.py                                                            | Python         |          0 |          0 |         -1 |         -1 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/accounts/migrations/0001_initial.py                                            | Python         |        -20 |         -1 |         -7 |        -28 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/accounts/migrations/0002_profile_delete_userprofile.py                         | Python         |        -24 |         -1 |         -6 |        -31 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/accounts/migrations/0003_remove_profile_id_alter_profile_user.py               | Python         |        -19 |         -1 |         -6 |        -26 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/accounts/migrations/0004_profile_telephone.py                                  | Python         |        -12 |         -1 |         -6 |        -19 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/accounts/migrations/__init__.py                                                | Python         |          0 |          0 |         -1 |         -1 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/accounts/models.py                                                             | Python         |        -21 |         -4 |         -2 |        -27 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/accounts/pagination.py                                                         | Python         |          0 |          0 |         -1 |         -1 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/accounts/permissions.py                                                        | Python         |         -6 |         -4 |         -3 |        -13 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/accounts/serializers.py                                                        | Python         |        -35 |         -6 |         -9 |        -50 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/accounts/signals.py                                                            | Python         |         -8 |         -3 |         -1 |        -12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/accounts/tests.py                                                              | Python         |         -1 |         -1 |         -2 |         -4 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/accounts/urls.py                                                               | Python         |         -7 |          0 |         -4 |        -11 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/accounts/views.py                                                              | Python         |       -121 |        -23 |        -21 |       -165 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/availability/__init__.py                                                       | Python         |          0 |          0 |         -1 |         -1 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/availability/admin.py                                                          | Python         |         -3 |          0 |         -2 |         -5 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/availability/apps.py                                                           | Python         |         -4 |          0 |         -3 |         -7 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/availability/migrations/0001_initial.py                                        | Python         |        -19 |         -1 |         -7 |        -27 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/availability/migrations/__init__.py                                            | Python         |          0 |          0 |         -1 |         -1 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/availability/models.py                                                         | Python         |        -11 |          0 |         -5 |        -16 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/availability/serializers.py                                                    | Python         |         -5 |          0 |         -2 |         -7 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/availability/tests.py                                                          | Python         |         -1 |         -1 |         -2 |         -4 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/availability/urls.py                                                           | Python         |         -3 |         -1 |         -1 |         -5 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/availability/views.py                                                          | Python         |        -55 |         -3 |        -13 |        -71 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/core/__init__.py                                                               | Python         |          0 |          0 |         -1 |         -1 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/core/asgi.py                                                                   | Python         |         -4 |         -8 |         -5 |        -17 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/core/serializers.py                                                            | Python         |        -23 |         -2 |         -5 |        -30 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/core/settings.py                                                               | Python         |       -135 |        -30 |        -37 |       -202 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/core/urls.py                                                                   | Python         |        -19 |        -16 |         -1 |        -36 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/core/wsgi.py                                                                   | Python         |         -4 |         -8 |         -5 |        -17 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/job/__init__.py                                                                | Python         |          0 |          0 |         -1 |         -1 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/job/admin.py                                                                   | Python         |         -5 |          0 |         -1 |         -6 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/job/apps.py                                                                    | Python         |         -4 |          0 |         -3 |         -7 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/job/migrations/0001_initial.py                                                 | Python         |        -54 |         -1 |         -7 |        -62 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/job/migrations/__init__.py                                                     | Python         |          0 |          0 |         -1 |         -1 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/job/models.py                                                                  | Python         |        -65 |          0 |        -12 |        -77 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/job/serializers.py                                                             | Python         |          0 |          0 |         -1 |         -1 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/job/tests.py                                                                   | Python         |         -1 |         -1 |         -2 |         -4 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/job/views.py                                                                   | Python         |         -1 |         -1 |         -2 |         -4 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/manage.py                                                                      | Python         |        -15 |         -3 |         -5 |        -23 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/society/__init__.py                                                            | Python         |          0 |          0 |         -1 |         -1 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/society/admin.py                                                               | Python         |         -5 |          0 |         -2 |         -7 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/society/apps.py                                                                | Python         |         -4 |          0 |         -3 |         -7 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/society/migrations/0001_initial.py                                             | Python         |        -55 |         -1 |         -7 |        -63 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/society/migrations/__init__.py                                                 | Python         |          0 |          0 |         -1 |         -1 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/society/models.py                                                              | Python         |        -35 |         -1 |         -6 |        -42 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/society/serializers.py                                                         | Python         |        -21 |          0 |         -5 |        -26 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/society/tests.py                                                               | Python         |         -1 |         -1 |         -2 |         -4 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/society/urls.py                                                                | Python         |        -15 |          0 |         -2 |        -17 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/society/views.py                                                               | Python         |       -250 |        -43 |        -43 |       -336 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/voting/__init__.py                                                             | Python         |          0 |          0 |         -1 |         -1 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/voting/admin.py                                                                | Python         |         -5 |         -1 |         -2 |         -8 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/voting/apps.py                                                                 | Python         |         -4 |          0 |         -3 |         -7 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/voting/migrations/0001_initial.py                                              | Python         |        -57 |         -1 |         -7 |        -65 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/voting/migrations/0002_remove_poll_is_active_poll_status.py                    | Python         |        -16 |         -1 |         -6 |        -23 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/voting/migrations/0003_alter_pollvote_user.py                                  | Python         |        -15 |         -1 |         -6 |        -22 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/voting/migrations/0004_alter_poll_options_alter_polloption_options_and_more.py | Python         |        -30 |         -1 |         -6 |        -37 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/voting/migrations/__init__.py                                                  | Python         |          0 |          0 |         -1 |         -1 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/voting/models.py                                                               | Python         |        -52 |         -1 |        -10 |        -63 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/voting/serializers.py                                                          | Python         |       -131 |        -10 |        -27 |       -168 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/voting/tests.py                                                                | Python         |         -1 |         -1 |         -2 |         -4 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/voting/urls.py                                                                 | Python         |         -7 |          0 |          0 |         -7 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/backend/server/voting/views.py                                                                | Python         |        -68 |        -16 |        -15 |        -99 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/mobile/README.md                                                                     | Markdown       |          2 |          0 |          0 |          2 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/README.md                                                                 | Markdown       |          7 |          0 |          6 |         13 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/eslint.config.js                                                          | JavaScript JSX |         28 |          0 |          2 |         30 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/index.html                                                                | HTML           |         13 |          0 |          1 |         14 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/package-lock.json                                                         | JSON           |      2,500 |          0 |          1 |      2,501 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/package.json                                                              | JSON           |         28 |          0 |          1 |         29 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/public/vite.svg                                                           | XML            |          1 |          0 |          0 |          1 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/App.css                                                               | PostCSS        |          6 |          0 |          2 |          8 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/App.jsx                                                               | JavaScript JSX |         13 |          0 |          4 |         17 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/assets/react.svg                                                      | XML            |          1 |          0 |          0 |          1 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/index.css                                                             | PostCSS        |          0 |          0 |          1 |          1 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/main.jsx                                                              | JavaScript JSX |         12 |          0 |          2 |         14 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/appLayoutPage/AppLayoutPage.jsx                     | JavaScript JSX |          8 |          0 |          3 |         11 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/clanPage/ClanPage.jsx                               | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/conflictsPage/ConflictsPage.jsx                     | JavaScript JSX |          9 |          0 |          5 |         14 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/dashboardPage/DashboardPage.jsx                     | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/discussionPage/DiscussionPage.jsx                   | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/discussionsPage/DiscussionsPage.jsx                 | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/jobDetailsPage/JobDetailsPage.jsx                   | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/jobsPage/JobsPage.jsx                               | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/membersPage/MembersPage.jsx                         | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/offDaysPage/OffdaysPage.jsx                         | JavaScript JSX |          8 |          0 |          3 |         11 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/pollPage/PollPage.jsx                               | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/pollsPage/PollsPage.jsx                             | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/profilePage/ProfilePage.jsx                         | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/settingPage/SettingPage.jsx                         | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/application/welcomePage/WelcomePage.jsx                         | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/landing/contactPage/ContactPage.jsx                             | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/landing/docsPage/DocsPage.jsx                                   | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/landing/homePage/HomePage.jsx                                   | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/landing/loginPage/LoginPage.jsx                                 | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/landing/pricingPage/PricingPage.jsx                             | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/landing/resgisterPage/RegisterPage.jsx                          | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/src/pages/landing/tutorialPage/TutorialPage.jsx                           | JavaScript JSX |          8 |          0 |          4 |         12 |
+| /Users/ramtinhosseini/Desktop/projects/wglife/frontend/web/client/vite.config.js                                                            | JavaScript JSX |          5 |          1 |          2 |          8 |
+| Total                                                                                                                                       |                |      1,307 |       -200 |       -251 |        856 |
++---------------------------------------------------------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
