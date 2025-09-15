@@ -22,6 +22,7 @@ import LandingLayoutPage from './pages/landing/landingLayoutPage/LandingLayoutPa
 import ApplicationLayoutPage from './pages/application/applicationLayoutPage/ApplicationLayoutPage'
 import PricingPage from './pages/landing/pricingPage/PricingPage'
 import TutorialPage from './pages/landing/tutorialPage/TutorialPage'
+import JobsPage from './pages/application/jobsPage/JobsPage'
 
 function App() {
 
@@ -38,10 +39,11 @@ function App() {
         <Route path="/app" element={<ApplicationLayoutPage />}>
             <Route index element={<DashboardPage />} />
             <Route path="dashboard" element={<DashboardPage />} />
+            <Route path="jobs" element={<JobsPage />} />
             <Route path="my-profile" element={<MyProfilePage />} />
             <Route path="clan" element={<ClanPage />} />
             <Route path="welcome" element={<WelcomePage />} />
-            <Route path="setting" element={<SettingPage />} />
+            <Route path="settings" element={<SettingPage />} />
             <Route path="polls" element={<PollsPage />} />
             <Route path="profile" element={<ProfilePage />} />
             <Route path="off-days" element={<OffDaysPage />} />

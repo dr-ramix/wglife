@@ -4,6 +4,7 @@ function PricingPage() {
   return (
     <div className='landingPricingPage'>
         Pricing Page
+        <h1>COMING SOON</h1>
     </div>
   )
 }
