@@ -2,8 +2,11 @@ from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.conf import settings
 from django.utils import timezone
+from datetime import timedelta
+
 from django.contrib.auth.models import User
 from society.models import Clan
+
 class WorkPeriod(models.TextChoices):
     DAILY = "1d", "Daily"
     TWO_DAYS = "2d", "Each 2 Days"
@@ -64,6 +67,7 @@ class Work(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
+        ordering = ['-start']
         constraints = [
             models.CheckConstraint(
                 check=models.Q(end__gte=models.F('start')),
@@ -74,17 +78,6 @@ class Work(models.Model):
     def __str__(self):
         return self.title + self.clan
 
-TASK_TEMPLATE_PRIORITY = {
-    1 : "low",
-    2 : "middle",
-    3 : "high",
-    4 : "very high"
-}
-
-TASK_TEMPLATE_STATUS = {
-    "a" : "active",
-    "d" : "deleted",
-}
 
 
 class TasTemplate(models.Model):
@@ -95,44 +88,45 @@ class TasTemplate(models.Model):
                              help_text="Please use less than 255 characters")
      work = models.ForeignKey(Work, on_delete=models.CASCADE, null=False, blank=False)
      note = models.TextField(null=True, blank=True)
-     priority = models.SmallIntegerField(choices=TASK_TEMPLATE_PRIORITY, validators=[MinValueValidator(1), MaxValueValidator(4)])
-     status = models.CharField(choices=TASK_TEMPLATE_STATUS, max_length=1, default="a")
+     priority = models.SmallIntegerField(choices=TaskPriority.choices, default=TaskPriority.MEDIUM ,validators=[MinValueValidator(1), MaxValueValidator(4)])
+     status = models.CharField(max_length=1, choices=TemplateStatus.choices, default=TemplateStatus.ACTIVE)
+
      created_at = models.DateTimeField(auto_now_add=True)
      updated_at = models.DateTimeField(auto_now=True)
 
      def __str__(self):
-         return self.title + self.work.title + self.work.clean
+         return f"{self.title} ({self.work.title} / {self.work.clan})"
 
-WORK_CYCLE_STATUS = {
-     "c" : "Coming",
-     "p" : "Progress",
-     "f" : "Finished",
-     "d" : "Deleted",
-}
 class WorkCycle(models.Model):
     work = models.ForeignKey(Work, on_delete=models.CASCADE, null=False, blank=False)
     start = models.DateTimeField(null=False)
     end = models.DateTimeField(null=False)
-    status = models.ChoicesField(choices=WORK_CYCLE_STATUS, max_length=1, null=False, blank=False)
+
+    status = models.CharField(max_length=1, choices=WorkCycleStatus.choices, default=WorkCycleStatus.COMING)
     created_by = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
+    class Meta:
+        constraints = [
+            models.CheckConstraints(
+                check = models.Q(end__gte=models.F('start')),
+                name='workcycle_end_after_start'
+            )
+        ]
+
     @property
     def to_be_done(self) -> bool:
-         if self.status == "c" and self.start == (datetime.now().date() + timedelta(days=3)):
-            return True
+         if self.status == WorkCycleStatus.COMING:
+            return self.start <= (timezone.now() + timedelta(days=3))
          return False
 
-    def __self__(self):
-        return self.work.title + "(" + self.start + self.end + ")"
+    def __str__(self):
+        s = self.start.strftime("%Y-%m-%d %H:%M")
+        e = self.end.strftime("%Y-%m-%d %H:%M")
+        return f"{self.work.title} ({s} → {e})"
 
-TASK_STATUS = {
-    "assigned" : "Assigned",
-    "finished" : "Finished",
-    "delayed" : "Delayed",
-    "deleted" : "Deleted",
-}
+
 class Task(models.Model):
         work_cycle = models.ForeignKey(WorkCycle, on_delete=models.CASCADE, null=False, blank=False)
         status = models.ChoicesField(choices=TASK_STATUS, max_length=10, null=False, blank=False)
