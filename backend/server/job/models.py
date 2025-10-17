@@ -4,7 +4,6 @@ from django.conf import settings
 from django.utils import timezone
 from datetime import timedelta
 
-from django.contrib.auth.models import User
 from society.models import Clan
 
 class WorkPeriod(models.TextChoices):
@@ -60,7 +59,7 @@ class Work(models.Model):
     deadline_duration = models.PositiveIntegerField(null=False,
                                                     default=2,
                                                     db_comment="Each task of this has some deadline duration to be completed ",
-                                                    validators=MinValueValidator(1))
+                                                    validators=[MinValueValidator(1)])
 
     created_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -75,12 +74,12 @@ class Work(models.Model):
             )
         ]
 
-    def __str__(self):
-        return self.title + self.clan
+    def __str__(self) -> str:
+        return f"{self.title} - {self.clan}"
 
 
 
-class TasTemplate(models.Model):
+class TaskTemplate(models.Model):
      title = models.CharField(max_length=255,
                              null=False,
                              blank=False,
@@ -103,13 +102,13 @@ class WorkCycle(models.Model):
     end = models.DateTimeField(null=False)
 
     status = models.CharField(max_length=1, choices=WorkCycleStatus.choices, default=WorkCycleStatus.COMING)
-    created_by = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
+    created_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
         constraints = [
-            models.CheckConstraints(
+            models.CheckConstraint(
                 check = models.Q(end__gte=models.F('start')),
                 name='workcycle_end_after_start'
             )
@@ -128,23 +127,27 @@ class WorkCycle(models.Model):
 
 
 class Task(models.Model):
-        work_cycle = models.ForeignKey(WorkCycle, on_delete=models.CASCADE, null=False, blank=False)
-        status = models.ChoicesField(choices=TASK_STATUS, max_length=10, null=False, blank=False)
+        work_cycle = models.ForeignKey(WorkCycle, on_delete=models.CASCADE, null=True)
+        status = models.CharField(max_length=10, choices=TaskStatus.choices, default=TaskStatus.ASSIGNED)
         title = models.CharField(max_length=255,
                              null=False,
                              blank=False,
                              db_comment="Title of each Task",
                              help_text="Please use less than 255 characters")
         note = models.TextField(null=True, blank=True)
+        assigned_user  = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True, related_name="assigned_task")
+        finished_at = models.DateTimeField(null=True, blank=True)
+        finished_by = models.ForeignKey(
+            settings.AUTH_USER_MODEL,
+            on_delete=models.SET_NULL,
+            null=True,
+            blank=True,
+            related_name="closed_task_instances",
+        )
+        priority = models.SmallIntegerField(choices=TaskPriority.choices, validators=[MinValueValidator(1), MaxValueValidator(4)])
+
         created_at = models.DateTimeField(auto_now_add=True)
         updated_at = models.DateTimeField(auto_now=True)
-        assigned_user   = models.ForeignKey(User, on_delete=models.CASCADE, null=False, related_name="assigned_assignments")
-        finished_at = models.DateTimeField(null=True, blank=True)
-        finished_by = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, related_name="closed_task_instances")
-
-        work = models.ForeignKey(Work, on_delete=models.CASCADE, null=False, blank=False)
-        priority = models.SmallIntegerField(choices=TASK_PRIORITY, validators=[MinValueValidator(1), MaxValueValidator(4)])
-
 
         def __str__(self) -> str:
-            return self.title + " - " + self.work_cycle.work.title + " (" + self.status + ")"
+            return f"{self.title} - ({self.status})"
