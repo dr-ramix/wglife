@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'djoser',                       # separate
     'rest_framework_simplejwt',
     'rest_framework_simplejwt.token_blacklist',
+    "django_extensions",
     'accounts', 
     'society',
     'voting',
@@ -200,3 +201,9 @@ SIMPLE_JWT = {
     'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
     'AUTH_HEADER_TYPES': ('Bearer'),
 }
+
+GRAPH_MODELS = {
+  'all_applications': True,
+  'group_models': True,
+}
+

@@ -1,10 +1,10 @@
 from rest_framework import serializers
-from django.contrib.auth.models import User
+#from django.contrib.auth.models import User
 from django.db import transaction, IntegrityError
 from django.utils import timezone
 
 from .models import Poll, PollOption, PollVote
-
+from accounts.models import User
 
 
 class PollOptionSerializer(serializers.ModelSerializer):

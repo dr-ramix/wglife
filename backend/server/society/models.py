@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 # Create your models here.
 
@@ -21,7 +22,7 @@ class Clan(models.Model):
         ordering = ['name']
 
 class Membership(models.Model):
-    user = models.ForeignKey('auth.User', on_delete=models.CASCADE, related_name='memberships')
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='memberships')
     clan = models.ForeignKey(Clan, on_delete=models.CASCADE, related_name='memberships')
     joined_at = models.DateTimeField(auto_now_add=True)
     left_at = models.DateTimeField(blank=True, null=True)
@@ -34,7 +35,7 @@ class Membership(models.Model):
 class ClanRule(models.Model):
     clan = models.ForeignKey(Clan, on_delete=models.CASCADE, related_name='rules')
     rule_text = models.TextField()
-    created_by = models.ForeignKey('auth.User', on_delete=models.CASCADE, related_name='created_rules')
+    created_by = models.ForeignKey(User, on_delete=models.CASCADE, related_name='created_rules')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
